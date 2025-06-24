@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products - ABISHMAR</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>ABISHMAR COLLECTION</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="cart-icon" onclick="toggleCartPopup()">🛒 <span id="cart-count">0</span></div>
+    </nav>
+  </header>
+  <div class="search-filter">
+    <input id="search-input" onkeyup="searchProducts()" placeholder="Search products..." />
+    <div class="filters">
+      <button onclick="filterCategory('all')">All</button>
+      <button onclick="filterCategory('kitchen')">Kitchen</button>
+      <button onclick="filterCategory('fabrics')">Fabrics</button>
+      <button onclick="filterCategory('shoes')">Shoes</button>
+      <button onclick="filterCategory('bags')">Bags</button>
+    </div>
+  </div>
+  <main class="grid">
+    <div class="product-card" data-name="Cooking Pot" data-category="kitchen">
+      <img src="https://via.placeholder.com/150?text=Pot" alt="Cooking Pot" />
+      <h4>Cooking Pot</h4>
+      <p>₦5000</p>
+      <button onclick="addToCart('Cooking Pot', 5000)">Add to Cart</button>
+    </div>
+    <div class="product-card" data-name="Ankara" data-category="fabrics">
+      <img src="https://via.placeholder.com/150?text=Ankara" alt="Ankara" />
+      <h4>Ankara</h4>
+      <p>₦3000</p>
+      <button onclick="addToCart('Ankara', 3000)">Add to Cart</button>
+    </div>
+    <div class="product-card" data-name="Leather Shoes" data-category="shoes">
+      <img src="https://via.placeholder.com/150?text=Shoes" alt="Shoes" />
+      <h4>Leather Shoes</h4>
+      <p>₦7500</p>
+      <button onclick="addToCart('Leather Shoes', 7500)">Add to Cart</button>
+    </div>
+    <div class="product-card" data-name="Handbag" data-category="bags">
+      <img src="https://via.placeholder.com/150?text=Bag" alt="Handbag" />
+      <h4>Handbag</h4>
+      <p>₦4000</p>
+      <button onclick="addToCart('Handbag', 4000)">Add to Cart</button>
+    </div>
+  </main>
+  <div id="cart-popup" class="cart-popup">
+    <div id="cart-items"></div>
+    <p id="cart-total">Total: ₦0</p>
+    <button onclick="goToCheckout()">Checkout</button>
+    <button onclick="clearCart()">Clear</button>
+  </div>
+  <footer><p>&copy; 2025 ABISHMAR COLLECTION</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
