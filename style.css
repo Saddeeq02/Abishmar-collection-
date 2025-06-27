@@ -17,7 +17,13 @@ header {
 }
 
 .logo {
-  height: 50px;
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%; /* Makes it round */
+  border: 2px solid #c8a2c8; /* Optional: lilac border */
+  background-color: #000; /* Optional: black background inside circle */
+}
 }
 
 nav a {
