@@ -1,59 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abishmar Collection</title>
+  <title>ABISHMAR COLLECTION</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Abishmar Logo" class="logo" />
-    <h1>ABISHMAR COLLECTION</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="checkout.html">Cart</a>
+      <h1>ABISHMAR COLLECTION</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="cart-icon" onclick="toggleCartPopup()">🛒 <span id="cart-count">0</span></div>
     </nav>
   </header>
-
-  <section class="content">
-    <h2>Our Products</h2>
-    <input type="text" placeholder="Search products..." class="search-input" />
-    <div class="filters">
-      <button>All</button>
-      <button>Kitchen</button>
-      <button>Fabrics</button>
-      <button>Shoes</button>
-      <button>Bags</button>
-    </div>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/pan-1232134_1280.jpg" alt="Cooking Pot">
-        <h3>Cooking Pot</h3>
-        <p>₦5000</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="https://cdn.pixabay.com/photo/2017/03/27/14/56/african-2181352_1280.jpg" alt="Ankara">
-        <h3>Ankara</h3>
-        <p>₦3000</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="https://cdn.pixabay.com/photo/2016/11/29/01/08/shoes-1867370_1280.jpg" alt="Leather Shoes">
-        <h3>Leather Shoes</h3>
-        <p>₦7500</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="https://cdn.pixabay.com/photo/2016/11/29/02/17/bag-1868398_1280.jpg" alt="Handbag">
-        <h3>Handbag</h3>
-        <p>₦4500</p>
-        <button>Add to Cart</button>
-      </div>
-    </div>
-  </section>
+  <main class="glass">
+    <h2>Everything You Need, Elegantly Delivered</h2>
+    <p>Explore our wide range of quality kitchen utensils, fabrics, shoes, and bags.</p>
+    <a href="products.html" class="btn">Shop Now</a>
+  </main>
+  <footer>
+    <p>&copy; 2025 ABISHMAR COLLECTION | Rijiyar Zaki, Kano</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
