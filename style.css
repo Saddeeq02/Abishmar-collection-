@@ -19,10 +19,10 @@ header {
 .logo {
   height: 60px;
   width: 60px;
-  object-fit: cover;
-  border-radius: 50%; /* Makes it round */
-  border: 2px solid #c8a2c8; /* Optional: lilac border */
-  background-color: #000; /* Optional: black background inside circle */
+  border-radius: 50%;           /* Makes it round */
+  object-fit: cover;            /* Zooms/crops to fit circle */
+  border: 2px solid #c8a2c8;    /* Optional lilac border */
+  background-color: #000;       /* Fills background if image is not full */
 }
 }
 
